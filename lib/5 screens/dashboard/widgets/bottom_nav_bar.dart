@@ -27,7 +27,7 @@ class CustomBottomNavBar extends StatelessWidget {
         backgroundColor: Colors.white,
         currentIndex: currentIndex, // Bind the selected index
         onTap: onItemTapped, // Trigger the callback
-        selectedItemColor: Colors.blue, // Color for the selected item
+        selectedItemColor: Colors.orangeAccent, // Color for the selected item
         unselectedItemColor: Colors.grey, // Color for unselected items
         type: BottomNavigationBarType.fixed, // Keep all items fixed
         iconSize: 24.sp, // Increase the icon size
@@ -37,20 +37,12 @@ class CustomBottomNavBar extends StatelessWidget {
             label: 'Home',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.apps),
-            label: 'Categories',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.notifications),
-            label: 'Notifications',
+            icon: Icon(Icons.map_rounded),
+            label: 'Home',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.account_circle),
             label: 'Account',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.shopping_cart),
-            label: 'Cart',
           ),
         ],
       ),

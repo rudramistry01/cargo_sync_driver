@@ -2,6 +2,7 @@ import 'package:cargo_sync_driver/1%20model/auth_model.dart';
 import 'package:cargo_sync_driver/4%20view%20model/register_view_model.dart';
 import 'package:cargo_sync_driver/5%20screens/auth/login_screen.dart';
 import 'package:cargo_sync_driver/5%20screens/dashboard/dashboard_screen.dart';
+import 'package:cargo_sync_driver/5%20screens/home/home_screen.dart';
 import 'package:cargo_sync_driver/6%20global%20widgets/text_wideget.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';

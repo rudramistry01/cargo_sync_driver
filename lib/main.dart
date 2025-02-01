@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
 
             theme: ThemeData(
               scaffoldBackgroundColor:
-                  Colors.grey.shade100, // Set default background color.
+                  Colors.white, // Set default background color.
             ),
 
             home: const InitialLoadingScreen(),

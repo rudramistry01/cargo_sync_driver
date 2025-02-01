@@ -35,7 +35,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (_) => const DashboardScreen()),
-      );  
+      );
     } catch (e) {
       await Future.delayed(const Duration(seconds: 3));
 

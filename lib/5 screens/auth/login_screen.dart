@@ -193,24 +193,24 @@ class _LoginScreenState extends State<LoginScreen> {
                   // Login Button
                   Center(
                     child: CustomElevatedButtonWithIcon(
-                      borderColor: Colors.black,
+                      borderColor: Colors.orangeAccent,
                       borderWidth: 1,
                       textColor: Colors.white,
-                      backgroundColor: Colors.black,
+                      backgroundColor: Colors.orangeAccent,
                       height: 50.h,
                       width: 350.w,
                       icon: Icons.login,
                       iconColor: Colors.white,
                       text: "Login",
                       onPressed: () {
-                        // if (_formKey.currentState!.validate()) {
-                        //   register.email = emailController.text;
-                        //   register.password = passwordController.text;
+                        if (_formKey.currentState!.validate()) {
+                          register.email = emailController.text;
+                          register.password = passwordController.text;
 
-                        //   // Implement login logic
-                        //   registerViewModel.loginUser(
-                        //       context, register, _isChecked);
-                        // }
+                          // Implement login logic
+                          registerViewModel.loginUser(
+                              context, register, _isChecked);
+                        }
                       },
                     ),
                   ),

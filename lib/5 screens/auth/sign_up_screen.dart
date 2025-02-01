@@ -253,39 +253,39 @@ class _SignUpScreenState extends State<SignUpScreen> {
                 ),
                 30.verticalSpace,
                 CustomElevatedButtonWithIcon(
-                  borderColor: Colors.black,
+                  borderColor: Colors.orangeAccent,
                   borderWidth: 1.0,
-                  textColor: Colors.black,
-                  iconColor: Colors.black,
-                  backgroundColor: isFormValid() ? Colors.black : Colors.grey,
+                  textColor: Colors.orangeAccent,
+                  iconColor: Colors.orangeAccent,
+                  backgroundColor: isFormValid() ? Colors.black : Colors.white,
                   height: 50.0.sp,
                   width: 350.0.sp,
                   icon: Icons.how_to_reg,
                   text: "Register",
                   onPressed: isFormValid()
                       ? () {
-                          // if (_formKey.currentState!.validate()) {
-                          //   _formKey.currentState!.save();
-                          //   register.fullname = fullnameController.text.trim();
-                          //   register.email = emailController.text.trim();
-                          //   register.contactNumber =
-                          //       contactnoController.text.trim();
-                          //   register.password = passwordController.text.trim();
-                          //   register.role = "user";
-                          //   registerViewModel
-                          //       .registerUser(context, register)
-                          //       .then((value) {
-                          //     // Handle API response here
-                          //   });
-                          // } else {
-                          //   ScaffoldMessenger.of(context).showSnackBar(
-                          //     const SnackBar(
-                          //       content:
-                          //           Text('Please fill all fields correctly.'),
-                          //       backgroundColor: Colors.red,
-                          //     ),
-                          //   );
-                          // }
+                          if (_formKey.currentState!.validate()) {
+                            _formKey.currentState!.save();
+                            register.fullname = fullnameController.text.trim();
+                            register.email = emailController.text.trim();
+                            register.contactNumber =
+                                contactnoController.text.trim();
+                            register.password = passwordController.text.trim();
+                            register.role = "customer";
+                            registerViewModel
+                                .registerUser(context, register)
+                                .then((value) {
+                              // Handle API response here
+                            });
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              const SnackBar(
+                                content:
+                                    Text('Please fill all fields correctly.'),
+                                backgroundColor: Colors.red,
+                              ),
+                            );
+                          }
                         }
                       : null, // Explicitly null when the form is invalid
                 ),
