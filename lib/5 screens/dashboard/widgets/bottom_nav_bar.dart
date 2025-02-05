@@ -24,11 +24,11 @@ class CustomBottomNavBar extends StatelessWidget {
         ),
       ),
       child: BottomNavigationBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.orange.shade100,
         currentIndex: currentIndex, // Bind the selected index
         onTap: onItemTapped, // Trigger the callback
         selectedItemColor: Colors.orangeAccent, // Color for the selected item
-        unselectedItemColor: Colors.grey, // Color for unselected items
+        unselectedItemColor: Colors.white, // Color for unselected items
         type: BottomNavigationBarType.fixed, // Keep all items fixed
         iconSize: 24.sp, // Increase the icon size
         items: const [

@@ -105,7 +105,7 @@ class _InitialLoadingScreenState extends State<InitialLoadingScreen> {
               SizedBox(height: 70.h),
 
               LoadingAnimationWidget.staggeredDotsWave(
-                color: Colors.blueAccent,
+                color: Colors.orangeAccent,
                 size: 100.sp,
               ),
 

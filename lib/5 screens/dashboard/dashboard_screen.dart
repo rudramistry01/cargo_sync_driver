@@ -1,6 +1,6 @@
 import 'package:cargo_sync_driver/5%20screens/dashboard/widgets/bottom_nav_bar.dart';
 import 'package:cargo_sync_driver/5%20screens/home/home_screen.dart';
-import 'package:cargo_sync_driver/5%20screens/profile/profilescreen.dart';
+import 'package:cargo_sync_driver/5%20screens/profile/profile_screen.dart';
 import 'package:cargo_sync_driver/5%20screens/trip/trip_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +16,7 @@ class _DashboardScreenState extends State<DashboardScreen> {
 
   // List of pages corresponding to each tab
   final List<Widget> _pages = [
-    const HomeScreen(),
+    HomeScreen(),
     const TripScreen(),
     const ProfileScreen(),
   ];
@@ -36,9 +36,23 @@ class _DashboardScreenState extends State<DashboardScreen> {
         index: _selectedIndex,
         children: _pages,
       ),
-      bottomNavigationBar: CustomBottomNavBar(
-        currentIndex: _selectedIndex, // Pass the current index
-        onItemTapped: _onItemTapped, // Pass the callback function
+      bottomNavigationBar: Container(
+        margin: EdgeInsets.only(
+            bottom: 20), // Adjust the value to uplift the navbar
+        child: Padding(
+          padding: const EdgeInsets.only(left: 16.0, right: 16.0, bottom: 16.0),
+          child: ClipRRect(
+            borderRadius: BorderRadius.circular(
+                20), // Adjust the value for rounded corners
+            child: Material(
+              elevation: 0, // Remove elevation
+              child: CustomBottomNavBar(
+                currentIndex: _selectedIndex, // Pass the current index
+                onItemTapped: _onItemTapped, // Pass the callback function
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

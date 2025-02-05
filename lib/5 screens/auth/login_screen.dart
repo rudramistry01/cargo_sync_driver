@@ -63,7 +63,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                       SizedBox(width: 10.w),
                       Text(
-                        "D Commerce",
+                        "Cargo Sync",
                         style: TextStyle(
                           fontSize: 25.sp,
                           fontWeight: FontWeight.bold,

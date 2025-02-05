@@ -56,7 +56,7 @@ class _LoadingScreenState extends State<LoadingScreen> {
       backgroundColor: Colors.white, // Background color of the screen
       body: Center(
         child: LoadingAnimationWidget.inkDrop(
-          color: Colors.grey.shade800, // The color of the inkdrop animation
+          color: Colors.orangeAccent, // The color of the inkdrop animation
           size: 100.sp, // Use ScreenUtil to make the size responsive
         ),
       ),

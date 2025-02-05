@@ -76,7 +76,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       SizedBox(width: 10.sp),
                       Text(
-                        "D Commerce",
+                        "Cargo Sync",
                         style: TextStyle(
                           fontSize: 25.sp,
                           fontWeight: FontWeight.bold,
