@@ -86,7 +86,7 @@ class HomeScreen extends StatelessWidget {
                     IconButton(
                       icon: const Icon(
                         Icons.menu,
-                        color: Colors.white,
+                        color: Colors.white ,
                       ),
                       onPressed: () {
                         _scaffoldKey.currentState?.openDrawer();
